@@ -1,0 +1,14 @@
+query SearchQuery($page:Int!){
+  characters(page:$page){
+   info{
+    next
+    prev
+  }
+    results{
+      id, 
+      name, 
+      status, 
+      image
+    }
+  }
+}
